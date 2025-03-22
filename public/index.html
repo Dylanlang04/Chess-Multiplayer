@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplayer Chess</title>
+    <link rel = "stylesheet"  type = "text/css" href = "css/style.css" />
+</head>
+
+<body>
+    <div id="regForm">
+        <input type="text" id="username" placeholder="Enter username">
+        <button id="connectBtn">Connect As</button>
+    </div>
+    
+    <div id="game">
+        <div class="board" id="chessboard"></div>
+        <div class=player1>Player 1: White</div>
+        <div class=player2>Player 2: Black</div>
+        <div id="players"></div>
+        
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src='js/client.js'></script>
+    <script src='js/main.js'></script>
+    
+</body>
+</html>

@@ -1,0 +1,74 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    flex-direction: column; /* Stack elements vertically */
+    margin: 0;
+    overflow-x: auto;
+    position: relative; /* Ensure positioning of player labels works */
+}
+
+#regForm {
+    margin-bottom: 10px;
+    margin-right: 220px;
+}
+
+#game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(8, 60px);
+    grid-template-rows: repeat(8, 60px);
+    border: 2px solid black;
+    max-width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+.square {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    cursor: pointer;
+}
+.dark {
+    background-color: #769656;
+}
+.light {
+    background-color: #eeeed2;
+}
+.player1 {
+    position: absolute;
+    top: 20px;
+    right: -130px;
+    font-size: 18px;
+    
+}
+
+/* Player 2 at bottom-left */
+.player2 {
+    position: absolute;
+    bottom: 20px;
+    left: -130px;
+    font-size: 18px;
+    
+}
+.username1 {
+    position: absolute;
+    right: -100px;
+    top: 50px;
+}
+.username2 {
+    position: absolute;
+    left: -120px;
+    bottom: -10px;
+}
